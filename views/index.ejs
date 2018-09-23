@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <form class="create-form" action="/search-results" method="post">
+      <h1>Search</h1>
+      <br>
+      <label for="exerciseBodyPart">Body Part</label>
+      <br>
+      <label for="">Chest</label>
+      <input type="checkbox" name="exerciseBodyPart" value="chest">
+      <br>
+      <label for="">Legs</label>
+      <input type="checkbox" name="exerciseBodyPart" value="legs">
+      <br>
+      <label for="">Arms</label>
+      <input type="checkbox" name="exerciseBodyPart" value="arms">
+      <br>
+      <label for="">Shoulders</label>
+      <input type="checkbox" name="exerciseBodyPart" value="shoulders">
+      <input type="submit" name="submit" value="submit">
+    </form>
+
+
+  </body>
+</html>
